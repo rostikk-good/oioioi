@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Таблиця взаємних курсів шести валют для лабораторної роботи №8, варіант 4.">
+  <meta name="theme-color" content="#0a0d16">
+  <title>Курси валют</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до вмісту</a>
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Головна навігація">
+      <a href="index.html">Головна</a><a class="active" href="task.html" aria-current="page">Курси валют</a><a href="team.html">Команда</a>
+    </nav>
+    <span class="header-tag">LAB 08 <i></i> VARIANT 04</span>
+  </header>
+
+  <main id="main" class="container inner-page">
+    <section class="page-hero compact-hero">
+      <p class="eyebrow"><span class="eyebrow-line"></span> ПРАКТИЧНЕ ЗАВДАННЯ · ВАРІАНТ 4</p>
+      <h1>Матриця <span>валют.</span></h1>
+      <p class="page-lead">Взаємні курси шести валют на основі офіційних курсів Національного банку України.</p>
+      <div class="page-tags"><span>6 ВАЛЮТ</span><span>МАТРИЦЯ 6 × 6</span><span>НАБІР №2</span><span>ІНДЕКСИ 0 · 6 · 7</span></div>
+    </section>
+
+    <section class="currency-overview">
+      <div class="overview-head"><div><p class="eyebrow">НАБІР ВАЛЮТ №2</p><h2>Обрані валюти</h2></div><span class="date-chip">КУРСИ НА 25.11.2026</span></div>
+      <div class="currency-cards">
+        <article class="currency-card"><span class="currency-code">UAH</span><b>₴</b><small>Українська гривня</small><strong>1,0000</strong><em>Базова валюта</em></article>
+        <article class="currency-card"><span class="currency-code">USD</span><b>$</b><small>Долар США</small><strong>45,3541 ₴</strong><em>за 1 долар</em></article>
+        <article class="currency-card"><span class="currency-code">EUR</span><b>€</b><small>Євро</small><strong>49,6060 ₴</strong><em>за 1 євро</em></article>
+        <article class="currency-card"><span class="currency-code">NZD</span><b>＄</b><small>Новозеландський долар</small><strong>24,7515 ₴</strong><em>за 1 долар</em></article>
+        <article class="currency-card"><span class="currency-code">SGD</span><b>S$</b><small>Сінгапурський долар</small><strong>35,1405 ₴</strong><em>за 1 долар</em></article>
+        <article class="currency-card"><span class="currency-code">ZAR</span><b>R</b><small>Південноафриканський ранд</small><strong>2,5896 ₴</strong><em>за 1 ранд</em></article>
+      </div>
+    </section>
+
+    <section class="matrix-section">
+      <div class="matrix-heading"><div><p class="eyebrow">ОБЧИСЛЕНА МАТРИЦЯ</p><h2>Взаємні курси валют</h2></div><span class="matrix-size">6 × 6</span></div>
+      <p class="matrix-description">У клітинці на перетині рядка A та стовпця B показано, скільки одиниць валюти A потрібно для купівлі однієї одиниці валюти B. Структуру заголовків оформлено за зразком із завдання: валюти купівлі — у стовпцях, валюти продажу — у рядках.</p>
+      <div class="table-scroll" role="region" aria-label="Таблиця взаємних курсів валют" tabindex="0">
+        <table class="rate-table">
+          <caption>Варіант 4. Матриця взаємних курсів шести валют за офіційними курсами НБУ на 25 листопада 2026 року</caption>
+          <thead>
+            <tr>
+              <th class="variant-head" colspan="2">Варіант 4</th>
+              <th class="purchase-head" colspan="6" scope="colgroup">Купівля 25.11.2026</th>
+            </tr>
+            <tr>
+              <th class="stub-head"><span class="visually-hidden">Дата продажу</span></th>
+              <th class="stub-head"><span class="visually-hidden">Валюта продажу</span></th>
+              <th scope="col">UAH</th><th scope="col">USD</th><th scope="col">EUR</th><th scope="col">NZD</th><th scope="col">SGD</th><th scope="col">ZAR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th class="sale-period" scope="rowgroup" rowspan="6">Продаж<br>25.11.2026</th><th scope="row">UAH</th><td class="diagonal">1,00000000</td><td>45,35410000</td><td>49,60600000</td><td>24,75150000</td><td>35,14050000</td><td>2,58960000</td></tr>
+            <tr><th scope="row">USD</th><td>0,02204872</td><td class="diagonal">1,00000000</td><td>1,09374897</td><td>0,54573897</td><td>0,77480316</td><td>0,05709737</td></tr>
+            <tr><th scope="row">EUR</th><td>0,02015885</td><td>0,91428658</td><td class="diagonal">1,00000000</td><td>0,49896182</td><td>0,70839213</td><td>0,05220336</td></tr>
+            <tr><th scope="row">NZD</th><td>0,04040159</td><td>1,83237784</td><td>2,00416136</td><td class="diagonal">1,00000000</td><td>1,41973214</td><td>0,10462396</td></tr>
+            <tr><th scope="row">SGD</th><td>0,02845719</td><td>1,29065039</td><td>1,41164753</td><td>0,70435822</td><td class="diagonal">1,00000000</td><td>0,07369275</td></tr>
+            <tr><th scope="row">ZAR</th><td>0,38616002</td><td>17,51394038</td><td>19,15585419</td><td>9,55803985</td><td>13,56985635</td><td class="diagonal">1,00000000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="matrix-legend"><span><i class="legend-dot"></i> Діагональні значення дорівнюють 1</span><span>Точність відображення: 8 знаків після коми</span></div>
+    </section>
+
+    <section class="calculation-note">
+      <div class="note-icon">ƒx</div>
+      <div><p class="eyebrow">ПРИНЦИП РОЗРАХУНКУ</p><h3>Як отримано взаємні курси?</h3><p>Спочатку взято офіційний курс кожної валюти до гривні. Щоб знайти курс валюти зі стовпця у валюті рядка, курс першої валюти до гривні поділено на курс другої валюти до гривні за формулою <strong>K(A, B) = R(B) / R(A)</strong>, де R — офіційний курс однієї одиниці валюти в гривнях.</p></div>
+    </section>
+    <p class="source-note">Джерела базових курсів: <a href="https://bank.gov.ua/ua/markets/exchangerates" target="_blank" rel="noopener noreferrer">Національний банк України — офіційні курси валют</a> та <a href="https://index.minfin.com.ua/ua/exchange/archive/nbu/2026-11-25/" target="_blank" rel="noopener noreferrer">архів офіційних курсів НБУ за 25.11.2026</a>. Взаємні значення обчислено на основі базових курсів.</p>
+  </main>
+
+  <footer class="site-footer container"><a class="brand footer-brand" href="index.html"><span ></span><span><span class="brand-dot">.</span></span></a><span>НАВЧАЛЬНИЙ ПРОЄКТ · 2026</span><span><a href="index.html">ГОЛОВНА</a> · <a href="team.html">КОМАНДА</a></span></footer>
+</body>
+</html>
